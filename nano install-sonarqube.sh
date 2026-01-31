@@ -2,10 +2,8 @@
 # ===============================================
 # SonarQube 9.6.1 Installation Script (Amazon Linux / RHEL / CentOS)
 # ===============================================
-
-echo "==== 1. Switching to root ===="
-sudo su -
-
+echo "==== Running as root ===="
+whoami
 echo "==== 2. Fixing Time Sync ===="
 timedatectl set-ntp true
 timedatectl set-timezone UTC
